@@ -1,0 +1,35 @@
+{
+  "name": "earist-attendance",
+  "productName": "Administrative Atttendance System",
+  "version": "1.0.0",
+  "description": "Face Recognition Attendance System",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.earist.attendance",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "Administrative Attendance System",
+      "license": "license.txt",
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "author": "Tena",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.0.1",
+    "electron-builder": "^23.6.0",
+    "electron-packager": "^17.1.1"
+  }
+}
